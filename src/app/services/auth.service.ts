@@ -5,10 +5,10 @@ import { Observable } from "rxjs/Observable";
 export class AuthService {
 
   constructor(private http:HttpClient) { }
-  
+
    url="http://localhost:55160/api/Account/Register/";
    // Add new User Service method
-  public register(itemName): Observable<number> {
+  public register(itemName): Observable<any> {
     debugger;
     console.log(itemName);
     return this.http.post(this.url, JSON.stringify(itemName));

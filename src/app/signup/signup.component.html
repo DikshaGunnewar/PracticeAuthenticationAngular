@@ -1,7 +1,12 @@
 
 <!--<h1>Register Here</h1>
 <button [routerLink]="['/login']"class="btn rounded-btn" >Register</button> -->
-  <form [formGroup]="myform" (ngSubmit)="onRegister(myform.value)" method="POST">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>Register Here..!</h1>
+            <hr>
+            <form [formGroup]="myform" (ngSubmit)="onRegister(myform.value)" method="POST">
             <div class="form-group">
                 <label for="Email">Email</label>
                   <input type="text" id="Email"  name="Email" class="form-control" formControlName="Email" />
@@ -21,3 +26,7 @@
 		   <button [routerLink]="['/login']"class="btn rounded-btn" >LogIn</button>
 	      
         </form>
+        </div>
+    </div>
+</div>
+ 

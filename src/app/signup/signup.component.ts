@@ -35,11 +35,12 @@ export class SignupComponent implements OnInit {
 itemData:any;
   onRegister() {
     let item = this.myform.value;
-    console.log(item);
+    //console.log(item);
     debugger;
     this._authservice.register(item)
       .subscribe(data => {
-        this.itemData = data;
+        //this.itemData = data;
+        item=data;
         console.log(data);
       })
 }
